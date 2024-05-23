@@ -65,6 +65,7 @@ body {
   width: 120px;
   height: 40px;
   font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
 }
 
 .text-first-btn {
@@ -90,3 +91,64 @@ body {
 .text-third-btn {
   color: hsl(179, 100%, 13%);
 }
+
+.btn:hover {
+  border: solid 1px hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%, 0);
+}
+
+.text-first-btn:hover,
+.text-second-btn:hover,
+.text-third-btn:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+/*
+
+@media (max-width: 480px) {
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    height: 70vh;
+    width: 70vh;
+  }
+
+  .third {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 5px;
+    margin-left: 0px;
+  }
+  .second {
+    background-color: hsl(184, 100%, 22%);
+    margin-left: 0px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    z-index: 1;
+  }
+
+  .btn {
+    margin-left: 3rem;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: hsl(0, 0%, 95%);
+    width: 120px;
+    height: 40px;
+    font-family: "Lexend Deca", sans-serif;
+    cursor: pointer;
+  }
+}
+
+*/

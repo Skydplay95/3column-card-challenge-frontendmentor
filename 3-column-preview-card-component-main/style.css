@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  height: 70vh;
+  width: 70vh;
+}
+
+.card {
+  width: 300px;
+}
+
+.card > * {
+  padding-left: 3rem;
+}
+
+.icon {
+  padding-top: 3rem;
+}
+
+.first {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 5px;
+}
+
+.title {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.text-description {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  width: 210px;
+  font-size: 15px;
+}
+
+.btn {
+  margin-left: 3rem;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 90px;
+  background-color: hsl(0, 0%, 95%);
+  width: 120px;
+  height: 40px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.text-first-btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.second {
+  background-color: hsl(184, 100%, 22%);
+  margin-left: -5px;
+  z-index: 1;
+}
+
+.text-second-btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.third {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 5px;
+  margin-left: -5px;
+}
+
+.text-third-btn {
+  color: hsl(179, 100%, 13%);
+}
